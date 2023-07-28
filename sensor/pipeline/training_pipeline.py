@@ -15,7 +15,7 @@ class TrainingPipeline:
 
     def start_data_ingestion(self)->DataIngestionArtifact:
         try:
-            data_ingestion_config = DataIngestion(training_pipeline_config=self.training_pipeline_config)
+            data_ingestion_config = DataIngestionConfig(training_pipeline_config=self.training_pipeline_config)
 
             data_ingestion = DataIngestion(data_ingestion_config)
             
