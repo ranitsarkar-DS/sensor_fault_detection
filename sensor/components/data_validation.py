@@ -88,7 +88,7 @@ class DataValidation:
     def drop_columns(self,df:pd.DataFrame) -> pd.DataFrame:
         try:
             schema_info = read_yaml_file(file_path=self.data_validation_cofig.schema_file_path)
-            logging.info(f"Dropping column based on schema provided : {drop_columns}")
+            # logging.info(f"Dropping column based on schema provided : {drop_columns}")
             drop_columns = schema_info["required_columns"]
             df.drop(drop_columns, axis=1, inplace=True)
             return df
