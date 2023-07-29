@@ -1,4 +1,3 @@
-from h11 import Data
 from sensor.components import data_validation
 from sensor.entity.config_entity import TrainingPipelineConfig, DataIngestionConfig,DataValidationConfig
 from sensor.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact
