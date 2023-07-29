@@ -32,7 +32,7 @@ class DataValidationConfig:
         self.invalid_test_file_path= os.path.join(self.invalid_dir,TEST_FILE_NAME)
         self.report_file_name = os.path.join(data_validation_dir,"report","report.yaml")
         self.schema_file_path=os.path.join("schema.yaml")
-        self.missing_thresold = 0.3
+        self.missing_thresold = 0.7
 
 
 

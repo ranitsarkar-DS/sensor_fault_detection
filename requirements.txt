@@ -3,4 +3,7 @@ numpy
 scikit-learn
 pymongo
 python-dotenv
+dill==0.3.5.1
+dnspython==2.2.1
+PyYAML
 -e.
