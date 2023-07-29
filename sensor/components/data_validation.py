@@ -85,7 +85,7 @@ class DataValidation:
         except Exception as e:
             raise SensorException(e,sys)
 
-    def drop_columns(self,df:pd.DataFrame) -> df.DataFrame:
+    def drop_columns(self,df:pd.DataFrame) -> pd.DataFrame:
         try:
             schema_info = read_yaml_file(file_path=self.data_validation_cofig.schema_file_path)
             logging.info(f"Dropping column based on schema provided : {drop_columns}")
